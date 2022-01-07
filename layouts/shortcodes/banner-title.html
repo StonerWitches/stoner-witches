@@ -1,0 +1,19 @@
+<!-- Banner header -->
+<!--
+  How to reference this section:
+  ```
+  //
+
+  banner-title
+    # Specify one of the theme colors - "dark" (default), "blue", "gray", or "light"
+    color="light"
+
+  //
+  ```
+-->
+
+<!-- This is the only h1 defined per page -->
+<h1
+  class="mx-auto mb-3 max-w-prose text-4xl sm:text-5xl font-extrabold {{ if .Get `color` }}text-{{ .Params.color }}{{ else }}text-dark{{ end }} tracking-tight">
+  {{ .Inner }}
+</h1>

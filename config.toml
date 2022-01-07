@@ -1,0 +1,61 @@
+baseURL = ""
+canonifyurls = true
+DefaultContentLanguage = "en"
+languageCode = "en-us"
+relativeURLs = true
+title = "Stoner Witches"
+
+# 404 page is overridden via "/layouts/section/404.html"
+disableKinds = ["404", "taxonomy", "term"]
+
+[module]
+  [module.hugoVersion]
+    extended = false
+    min = "0.79.0"
+
+[build]
+  # Used by PurgeCSS
+  writeStats = true
+
+[markup]
+  # Allows raw HTML to be displayed
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[params]
+  # Tracking & external application codes and IDs
+  gaTrackingCode = "placeholder"
+  gaAdWordsCode = "placeholder"
+  gtmTrackingCode = "placeholder"
+
+  # Social media page definitions
+  github = "#"
+  linkedin = "#"
+  twitter = "#"
+  youtube = "#"
+
+[taxonomies]
+  # None exist yet
+
+[menu]
+  [[menu.left]]
+    name = "About"
+    url = "/about/"
+    weight = -100
+
+  [[menu.left]]
+    name = "Contact"
+    url = "/contact/"
+    weight = -90
+
+  [[menu.footer]]
+    name = "About"
+    url = "/about/"
+    weight = -10
+
+  [[menu.footer]]
+    name = "Contact"
+    url = "/contact/"
+    weight = -9
+

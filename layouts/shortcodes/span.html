@@ -1,0 +1,20 @@
+<!-- A span element for defining inline text characteristics inside a text tag -->
+<!--
+  How to reference this section:
+  ```
+  //
+
+  span
+    # Specify one of the theme colors - "dark" (default), "blue", "gray", or "light"
+    color="light"
+
+    # Specify if this text should be "bold", "italic", or "underline"
+    type="bold"
+
+  //
+  ```
+-->
+
+<span class="{{ if .Get `color` }}text-{{ .Params.color }}{{ else }}text-dark{{ end }} {{ if eq .Params.type `bold` }}font-bold{{ else if eq .Params.type `italic` }}italic{{ else if eq .Params.type `underline` }}underline{{ end }}">
+  {{ .Inner }}
+</span>

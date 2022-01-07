@@ -1,0 +1,23 @@
+<!-- First level heading -->
+<!--
+  How to reference this section:
+  ```
+  //
+
+  heading1
+    # Specify an alignment - "left", "center", or "right"
+    # OPTIONAL: Default is whatever alignment is inherited from the parent
+    alignment="center"
+
+    # Specify one of the theme colors - "dark" (default), "blue", "gray", or "light"
+    color="light"
+
+  //
+  ```
+-->
+
+<!-- Content headings start at h2 as there should only be one h1 defined per page in the banner -->
+<h2
+  class="mx-auto mb-3 max-w-prose{{ if .Get `alignment` }} {{ if eq .Params.alignment `left` }}text-left{{ else if eq .Params.alignment `center` }}text-center{{ else if eq .Params.alignment `right` }}text-right{{ end }} {{ end }}text-3xl sm:text-4xl font-extrabold {{ if .Get `color` }}text-{{ .Params.color }}{{ else }}text-dark{{ end }} tracking-tight">
+  {{ .Inner }}
+</h2>

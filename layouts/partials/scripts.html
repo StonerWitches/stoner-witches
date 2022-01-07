@@ -1,0 +1,14 @@
+<!-- GLOBAL & PAGE-SPECIFIC JAVASCRIPT -->
+
+<!-- Global JavaScript files -->
+{{ $alpinejs := resources.Get "js/vendor/alpinejs/index.js" | js.Build | resources.Minify }} <!-- AlpineJS 3.7.0 -->
+<!-- TODO: Import jQuery as npm module -->
+{{ $jquery := resources.Get "js/vendor/jquery/jquery.min.js" }} <!-- jQuery 3.6.0 -->
+{{ $main := resources.Get "js/main.js" | resources.Minify }} <!-- Minified global scripts -->
+
+<script src="{{ $alpinejs.RelPermalink }}"></script>
+<script src="{{ $jquery.RelPermalink }}"></script>
+<script src="{{ $main.RelPermalink }}"></script>
+
+<!-- Page-specific scripts -->
+{{ block "page-scripts" . }}{{ end }}

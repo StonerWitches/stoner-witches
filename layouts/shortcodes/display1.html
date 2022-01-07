@@ -1,0 +1,18 @@
+<!-- First level display text -->
+<!--
+  How to reference this section:
+  ```
+  //
+
+  display1
+    # Specify one of the theme colors - "dark" (default), "blue", "gray", or "light"
+    color="light"
+
+  //
+  ```
+-->
+
+<p
+  class="mx-auto max-w-prose text-xl {{ if .Get `color` }}text-{{ .Params.color }}{{ else }}text-dark{{ end }}">
+  {{ .Inner }}
+</p>

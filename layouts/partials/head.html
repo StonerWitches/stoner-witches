@@ -1,0 +1,71 @@
+<!-- GLOBAL & PAGE-SPECIFIC HEAD CONTENT -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<!-- <meta name="google-site-verification" content="Placeholder" /> -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- If there is a unique site title, follow the format "Title | Site Title" -->
+{{ $title := (print .Params.title " | ") }}
+
+<!-- Title -->
+<title>{{ $title }}{{ $.Site.Title }}</title>
+
+<!-- Meta description definitions have the potential to have Markdown formatted content -->
+{{ $meta_description := .Params.meta_description | markdownify | plainify }}
+
+<!-- Meta Description -->
+<meta name="description" content={{ default "Placeholder" $meta_description }} />
+
+<!-- Facebook Open Graph Meta Tags -->
+<meta property="og:title" content={{ default "Placeholder | Stoner Witches" $title }} />
+<meta property="og:description" content={{ default "Placeholder" $meta_description }} />
+<meta property="og:image" content={{ default "https://www.stonerwitches.com/img/logos/socialmedia_logo.png" .Params.opengraph_sharing_img }} />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="627" />
+<meta property="og:url" content="https://www.stonerwitches.com" />
+<meta property="og:site_name" content="Stoner Witches" />
+
+<!-- Twitter Meta Tags -->
+<meta name="twitter:title" content={{ default "Placeholder | Stoner Witches" $title }} />
+<meta name="twitter:description" content={{ default "Placeholder" $meta_description }} />
+<meta name="twitter:image" content={{ default "https://www.stonerwitches.com/img/logos/socialmedia_logo.png" .Params.twitter_sharing_img }} />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@stonerwitches" />
+<meta name="twitter:creator" content="@stonerwitches" />
+
+<!-- Favicon -->
+<link rel="icon"  type="image/png"  href="/favicon.png">
+
+<!-- Styles -->
+{{ $options := dict "inlineImports" true }}
+{{ $styles := resources.Get "css/styles.css" }}
+{{ $styles = $styles | resources.PostCSS $options }}
+
+{{ if  hugo.IsProduction  }}
+  {{ $styles = $styles | minify | fingerprint | resources.PostProcess }}
+{{ end }}
+
+<link href="{{ $styles.RelPermalink }}" rel="stylesheet" />
+
+<!-- Page-specific head content -->
+{{ block "head" . }}{{ end }}
+
+<!-- Structured Data -->
+<!--
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "url": "https://www.stonerwitches.com/",
+  "logo": "{{ default "https://www.stonerwitches.com/img/logos/socialmedia_logo.png" .Params.logo }}",
+  "image": "{{ default "https://www.stonerwitches.com/img/logos/socialmedia_logo.png" .Params.logo }}",
+  "email": "mailto:placeholder@stonerwitches.com",
+  "description": "{{ default "Placeholder" $meta_description }}",
+  "name": "Stoner Witches",
+  "telephone": "+1-234-567-8901",
+  "sameAs" : [
+    "https://www.github.com/StonerWitches"
+  ]
+}
+</script>
+-->

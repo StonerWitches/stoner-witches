@@ -1,0 +1,24 @@
+<!-- General purpose content panel -->
+<!--
+  How to reference this section:
+  ```
+  //
+
+  content
+    # Content placement can be "left", "center", or "right"
+    contentPlacement="center"
+
+    # Text alignment can be set to "left", "center", or "right"
+    textAlignment="center"
+
+    # Width can be set to "full" or "partial"
+    width="full"
+
+  //
+  ```
+-->
+
+<div
+  class="prose prose-blue relative {{ if eq .Params.width `partial` }}max-w-3xl{{ else if eq .Params.width `full` }}max-w-7xl{{ end }} {{ if eq .Params.contentPlacement `left` }}mr-auto{{ else if eq .Params.contentPlacement `center` }}mx-auto{{ else if eq .Params.contentPlacement `right` }}ml-auto{{ end }} py-6 sm:py-12 text-{{ .Params.textAlignment }}">
+  {{ .Inner }}
+</div>

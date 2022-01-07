@@ -1,0 +1,40 @@
+<!-- Link component for internal or external URLs -->
+<!--
+  Determine what type of link you're including in the content. Is it internal or external?
+  "Internal" indicates this link is local to the "stonerwitches.com" domain, while "external" applies to any outside link.
+
+  How to reference this section:
+  ```
+  //
+
+  link
+    # If it's an internal link, specify URL nickname from /data/urls.toml (i.e. "about")
+    # Else, if it's external, specify the full URL path (i.e. "https://www.stonerwitches.com")
+    path="about"
+
+    # Determine what type of link this is - "internal" or "external"
+    type="internal"
+
+  //
+  ```
+-->
+
+{{ $url_path := "#" }}
+{{ if eq .Params.type "internal" }}
+  {{ $url_path = index .Site.Data.urls (print .Params.path) }}
+{{ else if eq .Params.type "pdf" }}
+  {{ $url_path = (print "https://stonerwitches.com/" .Params.path) }}
+{{ else if eq .Params.type "external" }}
+  {{ $url_path = .Params.path }}
+{{ end }}
+
+<a
+  class="font-bold no-underline{{ if .Get `type` }} {{ if eq .Params.type `external` }}ext-url{{ else if eq .Params.type `pdf` }}pdf-url{{ end }}{{ end }}{{ if .Get `button` }} bg-blue-500 hover:bg-blue-700 text-white py-2 px-4 rounded{{ else }} text-blue-900{{ end }}"
+  href="{{ $url_path }}"
+  {{ if or (eq .Params.type "external") (eq .Params.type "pdf") }}
+    rel="noopener"
+    target="_blank"
+  {{ end }}
+  {{ if .Get `button` }}
+    role="button"
+  {{ end }}>{{ .Inner }}</a>{{- "" -}}

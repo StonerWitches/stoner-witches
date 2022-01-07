@@ -1,0 +1,17 @@
+<!-- Second level display text -->
+<!--
+  How to reference this section:
+  ```
+  //
+
+  display2
+    # Specify one of the theme colors - "dark" (default), "blue", "gray", or "light"
+    color="light"
+
+  //
+  ```
+-->
+
+<h3 class="text-lg font-medium {{ if .Get `color` }}text-{{ .Params.color }}{{ else }}text-dark{{ end }} tracking-tight">
+  {{ .Inner }}
+</h3>

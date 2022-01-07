@@ -1,0 +1,42 @@
+{
+  "name": "stoner-witches",
+  "version": "1.0.0",
+  "private": "true",
+  "description": "Official repository hosting the code behind the Stoner Witches website.",
+  "main": "index.html",
+  "engines": {
+    "node": "16.x",
+    "yarn": "1.x"
+  },
+  "scripts": {
+    "build": "hugo",
+    "start": "hugo server --disableFastRender",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/StonerWitches/stoner-witches.git"
+  },
+  "keywords": [
+    "Hugo",
+    "TailwindCSS",
+    "PostCSS"
+  ],
+  "author": "Stoner Witches",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/StonerWitches/stoner-witches/issues"
+  },
+  "homepage": "https://github.com/StonerWitches/stoner-witches#readme",
+  "dependencies": {
+    "@tailwindcss/forms": "0.3.3",
+    "@tailwindcss/typography": "^0.4.1",
+    "alpinejs": "3.7.0",
+    "autoprefixer": "^10.3.1",
+    "express": "^4.17.1",
+    "postcss": "^8.3.6",
+    "postcss-cli": "^8.3.1",
+    "postcss-purgecss": "^2.0.3",
+    "tailwindcss": "^2.2.7"
+  }
+}

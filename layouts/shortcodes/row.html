@@ -1,0 +1,24 @@
+<!-- Row component for housing columns of content -->
+<!--
+  How to reference this section:
+  ```
+  //
+
+  row
+    # Specify how many columns there should be displayed per row on a desktop/laptop browser
+    columns="3"
+
+  //
+  ```
+-->
+
+{{ $grid_cols_lg := (print "lg:grid-cols-" .Params.columns) }}
+{{ $grid_cols_sm := (print "sm:grid-cols-" (math.Round (math.Sqrt .Params.columns))) }}
+
+<div class="mt-12">
+  <div class="grid grid-cols-1 gap-8 {{ $grid_cols_sm }} {{ $grid_cols_lg }}">
+
+    {{ .Inner }}
+
+  </div>
+</div>

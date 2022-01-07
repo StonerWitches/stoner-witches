@@ -1,0 +1,21 @@
+{
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "standard-1x"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "https://github.com/eccentric-j/heroku-buildpack-hugo"
+    },
+    {
+      "url": "heroku/nodejs"
+    }
+  ],
+  "env": {
+    "HUGO_VERSION": {
+      "value": "0.90.0"
+    }
+  }
+}

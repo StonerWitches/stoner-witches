@@ -1,0 +1,29 @@
+<!-- Wrapper panel for content -->
+<!--
+  How to reference this section:
+  ```
+  //
+
+  content-wrapper
+    # The name of the image, i.e. /img/backgrounds/global_connectivity.svg becomes "global_connectivity"
+    # Images must be located under /img/backgrounds/ and be in SVG format
+    # OPTIONAL: Default is "light" color background
+    backgroundImage="image_name"
+
+    # Specify one of the theme colors - "light" (default), "blue", "gray", or "dark"
+    # OPTIONAL: Default is "light" color background
+    color="light"
+
+  //
+  ```
+-->
+
+<div class="relative {{ if .Get `backgroundImage` }}my-8 py-12 sm:py-24 px-4 sm:px-6 lg:px-8{{ end }}">
+  <div class="absolute inset-0">
+    <div
+      aria-hidden="true"
+      class="absolute inset-0 bg-left-top {{ if .Get `backgroundColor` }}bg-{{ .Params.backgroundColor }}{{ else }}bg-light{{ end }}"
+      {{ if .Get `backgroundImage` }}style="background-image: url('/img/backgrounds/{{ .Params.backgroundImage }}.svg')"{{ end }}></div>
+  </div>
+  {{ .Inner }}
+</div>

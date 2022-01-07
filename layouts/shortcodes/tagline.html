@@ -1,0 +1,19 @@
+<!-- Tagline that promotes featured text -->
+<!--
+  How to reference this section:
+  ```
+  //
+
+  tagline
+    # Specify one of the theme colors - "dark" (default), "blue", "gray", or "light"
+    color="light"
+
+  //
+  ```
+-->
+
+<!-- Content headings start at h2 as there should only be one h1 defined per page in the banner -->
+<p
+  class="mx-auto max-w-prose text-3xl sm:text-4xl font-extrabold italic {{ if .Get `color` }}text-{{ .Params.color }}{{ else }}text-dark{{ end }} tracking-tight">
+  {{ .Inner }}
+</p>

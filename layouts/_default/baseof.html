@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Global and page-specific head content -->
+    {{ partial "head.html" . }}
+  </head>
+  <body>
+    <!-- Top sticky navigation bar -->
+    <div class="top-0">
+      {{ partial "navigation.html" . }}
+    </div>
+
+    <!-- Unique content displayed per-page -->
+    <main class="mt-16 mb-16 mx-auto max-w-7xl px-4 sm:mt-24 sm:mb-24">
+      {{ block "main" . }}{{ end }}
+    </main>
+
+    <!-- Bottom static footer  -->
+    {{ partial "footer.html" . }}
+
+    <!-- Global and page-specific JavaScript -->
+    {{ partial "scripts.html" . }}
+  </body>
+</html>

@@ -1,0 +1,73 @@
+<!-- Column component for housing content within a row -->
+<!--
+  # The name of the image, i.e. /img/icons/containers.svg becomes "containers"
+  # Images must be located under /img/icons/ and be in SVG format
+  # TODO: Icon default "image_name" will look under "/icons/" else if image path defined look there
+  icon="image_name"
+
+  # TODO: Explain backgroundColor - default `bg-light`, options should include `bg-surface`
+  # TODO: Explain type
+  # TODO: Explain how to reference this section
+  # TODO: Explain color
+  # TODO: Explain text
+  # TODO: Document inline code below
+
+  How to reference this section:
+  ```
+  //
+
+  column
+
+  //
+  ```
+-->
+
+<div class="pt-6">
+  <div class="flow-root {{ if .Get `backgroundColor` }}bg-{{ .Params.backgroundColor }}{{ else }}bg-gray-100{{ end }} rounded-lg {{ if .Get `type` }} {{ if eq .Params.type `card-with-offset-icon` }}px-6 pb-8{{ else if or (eq .Params.type `card-with-icon`) (eq .Params.type `icon-with-text`) }}px-8 py-8{{ end }}{{ end }}">
+
+    {{ if eq .Params.type "card-with-offset-icon" }}
+
+      {{ if .Get `icon` }}
+
+        <div class="-mt-6">
+          <span class="inline-flex items-center justify-center p-3 bg-indigo-500 rounded-md shadow-lg">
+            <object class="h-6 w-6" type="image/svg+xml" data=""></object>
+          </span>
+        </div>
+
+      {{ end }}
+
+      {{ .Inner }}
+
+    {{ else if eq .Params.type "card-with-icon" }}
+
+      {{ if .Get `icon` }}
+
+        <!-- TODO: Replace /img/icons/ here with logic -->
+        <object class="h-12 w-12" type="image/svg+xml" data="/img/icons/{{ .Params.icon }}.svg"></object>
+
+      {{ end }}
+
+      {{ .Inner }}
+
+    {{ else if eq .Params.type "icon-with-text" }}
+
+        {{ if .Get `icon` }}
+          <!-- TODO: Replace /img/ here with logic -->
+          <object class="mx-auto my-auto h-20 w-20" type="image/svg+xml" data="/img/{{ .Params.icon }}.svg"></object>
+
+          <p
+            class="mx-auto mt-4 mb-0 max-w-prose text-xl {{ if .Get `color` }}text-{{ .Params.color }}{{ else }}text-dark{{ end }}">
+            {{ .Inner }}
+          </p>
+
+        {{ end }}
+
+    {{ else }}
+
+        {{ .Inner }}
+
+    {{ end }}
+
+  </div>
+</div>

@@ -1,0 +1,12 @@
+# All URL patterns referenced through nicknames (i.e. "home") to allow for consistency in referencing pages using variables
+#
+# Example:
+# home = '/'
+#
+# See "/layouts/shortcodes/link.html" for referencing links within /content/
+#
+#
+
+home = '/'
+about = '/about/'
+contact = '/contact/'
