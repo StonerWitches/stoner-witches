@@ -5,11 +5,23 @@
 @import "components/all.css";
 
 html {
-    font-size: 14px;
+  font-family: "BeVietnamPro", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: "AlphabetismHand", sans-serif;
+  text-transform: uppercase;
+}
+
+.logo {
+  font-family: "Norse", sans-serif;
 }
 
 @screen md {
-    html {
-        font-size: 16px;
-    }
+  html {
+    font-size: 16px;
+  }
 }
