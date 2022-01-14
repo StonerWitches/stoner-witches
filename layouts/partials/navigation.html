@@ -1,10 +1,10 @@
 <!-- NAVIGATION -->
-<nav class="bg-gray-800">
+<nav class="bg-black">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex items-center justify-between h-16">
       <div class="flex items-center">
         <div class="flex-shrink-0">
-          <h1 class="logo text-white">
+          <h1 class="logo text-white text-3xl">
             Stoner Witches
           </h1>
         </div>
@@ -13,7 +13,7 @@
             <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
             {{ range .Site.Menus.left }}
 
-              <a href="{{ .URL }}" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">{{ .Name }}</a>
+              <a href="{{ .URL }}" class="text-gray-300 hover:bg-gray-700 hover:text-white h2 px-3 py-2 rounded-md text-lg font-large">{{ .Name }}</a>
 
             {{ end }}
           </div>

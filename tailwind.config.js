@@ -39,9 +39,6 @@ module.exports = {
         'hero-pattern': "url('/img/backgrounds/hero_pattern.svg')",
       }),
       colors: {
-        // Primary colors
-        black: '#221F20',
-
         // Theme colors
         dark: colors.black,
         light: colors.white,
