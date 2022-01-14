@@ -29,14 +29,18 @@
   },
   "homepage": "https://github.com/StonerWitches/stoner-witches#readme",
   "dependencies": {
-    "@tailwindcss/forms": "0.3.3",
-    "@tailwindcss/typography": "^0.4.1",
     "alpinejs": "3.7.0",
-    "autoprefixer": "^10.3.1",
     "express": "^4.17.1",
-    "postcss": "^8.3.6",
     "postcss-cli": "^8.3.1",
-    "postcss-purgecss": "^2.0.3",
-    "tailwindcss": "^2.2.7"
+    "postcss-purgecss": "^2.0.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/aspect-ratio": "0.4.0",
+    "@tailwindcss/forms": "0.4.0",
+    "@tailwindcss/line-clamp": "0.3.1",
+    "@tailwindcss/typography": "0.5.0",
+    "autoprefixer": "10.4.2",
+    "postcss": "8.4.5",
+    "tailwindcss": "3.0.14"
   }
 }
