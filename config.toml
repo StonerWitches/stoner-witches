@@ -1,4 +1,4 @@
-baseURL = "https://stonerwitches.github.io/stoner-witches/"
+baseURL = "https://stonerwitches.com"
 canonifyurls = true
 DefaultContentLanguage = "en"
 languageCode = "en-us"
