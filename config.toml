@@ -25,37 +25,46 @@ disableKinds = ["404", "taxonomy", "term"]
 
 [params]
   # Tracking & external application codes and IDs
-  gaTrackingCode = "placeholder"
-  gaAdWordsCode = "placeholder"
-  gtmTrackingCode = "placeholder"
+  # gaTrackingCode = "placeholder"
+  # gaAdWordsCode = "placeholder"
+  # gtmTrackingCode = "placeholder"
 
   # Social media page definitions
-  github = "#"
-  linkedin = "#"
-  twitter = "#"
-  youtube = "#"
+  # reddit = "#"
+  # etsy = "#"
+  # instagram = "https://www.instagram.com/stoner.witches/"
 
 [taxonomies]
   # None exist yet
 
-[menu]
-  [[menu.left]]
-    name = "About"
-    url = "/about/"
-    weight = -100
-
-  [[menu.left]]
-    name = "Contact"
-    url = "/contact/"
-    weight = -90
-
-  [[menu.footer]]
-    name = "About"
-    url = "/about/"
-    weight = -10
-
-  [[menu.footer]]
-    name = "Contact"
-    url = "/contact/"
-    weight = -9
+#[menu]
+#  [[menu.left]]
+#    name = "About"
+#    url = "/about/"
+#    weight = -100
+#
+#  [[menu.left]]
+#    name = "SHop"
+#    url = "/shop/"
+#    weight = -100
+#
+#  [[menu.left]]
+#    name = "Contact"
+#    url = "/contact/"
+#    weight = -90
+#
+#  [[menu.footer]]
+#    name = "About"
+#    url = "/about/"
+#    weight = -10
+#
+#  [[menu.footer]]
+#    name = "Shop"
+#    url = "/shop/"
+#    weight = -10
+#
+#  [[menu.footer]]
+#    name = "Contact"
+#    url = "/contact/"
+#    weight = -9
 

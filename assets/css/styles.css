@@ -8,16 +8,23 @@ html {
   font-family: "BeVietnamPro", sans-serif;
   font-size: 14px;
   font-weight: 400;
+  background-color: black;
 }
 
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: "AlphabetismHand", sans-serif;
   text-transform: uppercase;
+  color: white;
+}
+
+p {
+  color: white;
 }
 
 .logo {
   font-family: "Norse", sans-serif;
+  font-size: 103%;
 }
 
 @screen md {

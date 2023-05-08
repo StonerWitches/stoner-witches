@@ -40,8 +40,8 @@ module.exports = {
       }),
       colors: {
         // Theme colors
-        dark: colors.black,
-        light: colors.white,
+        'dark': colors.black,
+        'light': '#fff9e7',
       },
     }
   }
