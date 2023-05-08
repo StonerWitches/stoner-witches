@@ -1,7 +1,0 @@
-/* ALL CSS IMPORTS */
-
-/* These CSS files are used on every page */
-@import "fonts.css";
-
-/* These CSS files are called only from where they're needed */
-/* - customers.css */
