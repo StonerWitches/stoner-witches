@@ -9,7 +9,7 @@
     "yarn": "1.x"
   },
   "scripts": {
-    "build": "npx tailwindcss -i ./assets/css/components/main.css -o ./assets/css/styles.css",
+    "build": "npx tailwindcss -i ./assets/css/global/main.css -o ./assets/css/styles.css",
     "start": "hugo server --disableFastRender",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

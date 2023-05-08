@@ -1,0 +1,293 @@
+/* WEB FONTS */
+
+/* Body */
+
+@font-face {
+  font-family: 'BeVietnamPro';
+  src: url('bevietnampro/bevietnampro-thin.eot');
+  src: url('bevietnampro/bevietnampro-thin.eot?#iefix') format('embedded-opentype'),
+       url('bevietnampro/bevietnampro-thin.woff2') format('woff2'),
+       url('bevietnampro/bevietnampro-thin.woff') format('woff'),
+       url('bevietnampro/bevietnampro-thin.ttf') format('truetype'),
+       url('bevietnampro/bevietnampro-thin.svg#be_vietnam_pro_thin') format('svg');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'BeVietnamPro';
+  src: url('bevietnampro/bevietnampro-thinitalic.eot');
+  src: url('bevietnampro/bevietnampro-thinitalic.eot?#iefix') format('embedded-opentype'),
+       url('bevietnampro/bevietnampro-thinitalic.woff2') format('woff2'),
+       url('bevietnampro/bevietnampro-thinitalic.woff') format('woff'),
+       url('bevietnampro/bevietnampro-thinitalic.ttf') format('truetype'),
+       url('bevietnampro/bevietnampro-thinitalic.svg#be_vietnam_pro_thinitalic') format('svg');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'BeVietnamPro';
+  src: url('bevietnampro/bevietnampro-extralight.eot');
+  src: url('bevietnampro/bevietnampro-extralight.eot?#iefix') format('embedded-opentype'),
+       url('bevietnampro/bevietnampro-extralight.woff2') format('woff2'),
+       url('bevietnampro/bevietnampro-extralight.woff') format('woff'),
+       url('bevietnampro/bevietnampro-extralight.ttf') format('truetype'),
+       url('bevietnampro/bevietnampro-extralight.svg#be_vietnam_pro_extralight') format('svg');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'BeVietnamPro';
+  src: url('bevietnampro/bevietnampro-extralightitalic.eot');
+  src: url('bevietnampro/bevietnampro-extralightitalic.eot?#iefix') format('embedded-opentype'),
+       url('bevietnampro/bevietnampro-extralightitalic.woff2') format('woff2'),
+       url('bevietnampro/bevietnampro-extralightitalic.woff') format('woff'),
+       url('bevietnampro/bevietnampro-extralightitalic.ttf') format('truetype'),
+       url('bevietnampro/bevietnampro-extralightitalic.svg#be_vietnam_pro_extralightitalic') format('svg');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'BeVietnamPro';
+  src: url('bevietnampro/bevietnampro-light.eot');
+  src: url('bevietnampro/bevietnampro-light.eot?#iefix') format('embedded-opentype'),
+       url('bevietnampro/bevietnampro-light.woff2') format('woff2'),
+       url('bevietnampro/bevietnampro-light.woff') format('woff'),
+       url('bevietnampro/bevietnampro-light.ttf') format('truetype'),
+       url('bevietnampro/bevietnampro-light.svg#be_vietnam_pro_light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'BeVietnamPro';
+  src: url('bevietnampro/bevietnampro-lightitalic.eot');
+  src: url('bevietnampro/bevietnampro-lightitalic.eot?#iefix') format('embedded-opentype'),
+       url('bevietnampro/bevietnampro-lightitalic.woff2') format('woff2'),
+       url('bevietnampro/bevietnampro-lightitalic.woff') format('woff'),
+       url('bevietnampro/bevietnampro-lightitalic.ttf') format('truetype'),
+       url('bevietnampro/bevietnampro-lightitalic.svg#be_vietnam_pro_lightitalic') format('svg');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'BeVietnamPro';
+  src: url('bevietnampro/bevietnampro-regular.eot');
+  src: url('bevietnampro/bevietnampro-regular.eot?#iefix') format('embedded-opentype'),
+       url('bevietnampro/bevietnampro-regular.woff2') format('woff2'),
+       url('bevietnampro/bevietnampro-regular.woff') format('woff'),
+       url('bevietnampro/bevietnampro-regular.ttf') format('truetype'),
+       url('bevietnampro/bevietnampro-regular.svg#be_vietnam_pro_regular') format('svg');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'BeVietnamPro';
+  src: url('bevietnampro/bevietnampro-italic.eot');
+  src: url('bevietnampro/bevietnampro-italic.eot?#iefix') format('embedded-opentype'),
+       url('bevietnampro/bevietnampro-italic.woff2') format('woff2'),
+       url('bevietnampro/bevietnampro-italic.woff') format('woff'),
+       url('bevietnampro/bevietnampro-italic.ttf') format('truetype'),
+       url('bevietnampro/bevietnampro-italic.svg#be_vietnam_pro_italic') format('svg');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'BeVietnamPro';
+  src: url('bevietnampro/bevietnampro-medium.eot');
+  src: url('bevietnampro/bevietnampro-medium.eot?#iefix') format('embedded-opentype'),
+       url('bevietnampro/bevietnampro-medium.woff2') format('woff2'),
+       url('bevietnampro/bevietnampro-medium.woff') format('woff'),
+       url('bevietnampro/bevietnampro-medium.ttf') format('truetype'),
+       url('bevietnampro/bevietnampro-medium.svg#be_vietnam_pro_medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'BeVietnamPro';
+  src: url('bevietnampro/bevietnampro-mediumitalic.eot');
+  src: url('bevietnampro/bevietnampro-mediumitalic.eot?#iefix') format('embedded-opentype'),
+       url('bevietnampro/bevietnampro-mediumitalic.woff2') format('woff2'),
+       url('bevietnampro/bevietnampro-mediumitalic.woff') format('woff'),
+       url('bevietnampro/bevietnampro-mediumitalic.ttf') format('truetype'),
+       url('bevietnampro/bevietnampro-mediumitalic.svg#be_vietnam_pro_mediumitalic') format('svg');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'BeVietnamPro';
+  src: url('bevietnampro/bevietnampro-medium.eot');
+  src: url('bevietnampro/bevietnampro-medium.eot?#iefix') format('embedded-opentype'),
+       url('bevietnampro/bevietnampro-medium.woff2') format('woff2'),
+       url('bevietnampro/bevietnampro-medium.woff') format('woff'),
+       url('bevietnampro/bevietnampro-medium.ttf') format('truetype'),
+       url('bevietnampro/bevietnampro-medium.svg#be_vietnam_pro_medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'BeVietnamPro';
+  src: url('bevietnampro/bevietnampro-mediumitalic.eot');
+  src: url('bevietnampro/bevietnampro-mediumitalic.eot?#iefix') format('embedded-opentype'),
+       url('bevietnampro/bevietnampro-mediumitalic.woff2') format('woff2'),
+       url('bevietnampro/bevietnampro-mediumitalic.woff') format('woff'),
+       url('bevietnampro/bevietnampro-mediumitalic.ttf') format('truetype'),
+       url('bevietnampro/bevietnampro-mediumitalic.svg#be_vietnam_pro_mediumitalic') format('svg');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'BeVietnamPro';
+  src: url('bevietnampro/bevietnampro-semibold.eot');
+  src: url('bevietnampro/bevietnampro-semibold.eot?#iefix') format('embedded-opentype'),
+       url('bevietnampro/bevietnampro-semibold.woff2') format('woff2'),
+       url('bevietnampro/bevietnampro-semibold.woff') format('woff'),
+       url('bevietnampro/bevietnampro-semibold.ttf') format('truetype'),
+       url('bevietnampro/bevietnampro-semibold.svg#be_vietnam_pro_semibold') format('svg');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'BeVietnamPro';
+  src: url('bevietnampro/bevietnampro-semibolditalic.eot');
+  src: url('bevietnampro/bevietnampro-semibolditalic.eot?#iefix') format('embedded-opentype'),
+       url('bevietnampro/bevietnampro-semibolditalic.woff2') format('woff2'),
+       url('bevietnampro/bevietnampro-semibolditalic.woff') format('woff'),
+       url('bevietnampro/bevietnampro-semibolditalic.ttf') format('truetype'),
+       url('bevietnampro/bevietnampro-semibolditalic.svg#be_vietnam_pro_semibolditalic') format('svg');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'BeVietnamPro';
+  src: url('bevietnampro/bevietnampro-bold.eot');
+  src: url('bevietnampro/bevietnampro-bold.eot?#iefix') format('embedded-opentype'),
+       url('bevietnampro/bevietnampro-bold.woff2') format('woff2'),
+       url('bevietnampro/bevietnampro-bold.woff') format('woff'),
+       url('bevietnampro/bevietnampro-bold.ttf') format('truetype'),
+       url('bevietnampro/bevietnampro-bold.svg#be_vietnam_pro_bold') format('svg');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'BeVietnamPro';
+  src: url('bevietnampro/bevietnampro-bolditalic.eot');
+  src: url('bevietnampro/bevietnampro-bolditalic.eot?#iefix') format('embedded-opentype'),
+       url('bevietnampro/bevietnampro-bolditalic.woff2') format('woff2'),
+       url('bevietnampro/bevietnampro-bolditalic.woff') format('woff'),
+       url('bevietnampro/bevietnampro-bolditalic.ttf') format('truetype'),
+       url('bevietnampro/bevietnampro-bolditalic.svg#be_vietnam_pro_bolditalic') format('svg');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'BeVietnamPro';
+  src: url('bevietnampro/bevietnampro-extrabold.eot');
+  src: url('bevietnampro/bevietnampro-extrabold.eot?#iefix') format('embedded-opentype'),
+       url('bevietnampro/bevietnampro-extrabold.woff2') format('woff2'),
+       url('bevietnampro/bevietnampro-extrabold.woff') format('woff'),
+       url('bevietnampro/bevietnampro-extrabold.ttf') format('truetype'),
+       url('bevietnampro/bevietnampro-extrabold.svg#be_vietnam_pro_extrabold') format('svg');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'BeVietnamPro';
+  src: url('bevietnampro/bevietnampro-extrabolditalic.eot');
+  src: url('bevietnampro/bevietnampro-extrabolditalic.eot?#iefix') format('embedded-opentype'),
+       url('bevietnampro/bevietnampro-extrabolditalic.woff2') format('woff2'),
+       url('bevietnampro/bevietnampro-extrabolditalic.woff') format('woff'),
+       url('bevietnampro/bevietnampro-extrabolditalic.ttf') format('truetype'),
+       url('bevietnampro/bevietnampro-extrabolditalic.svg#be_vietnam_pro_extrabolditalic') format('svg');
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'BeVietnamPro';
+  src: url('bevietnampro/bevietnampro-black.eot');
+  src: url('bevietnampro/bevietnampro-black.eot?#iefix') format('embedded-opentype'),
+       url('bevietnampro/bevietnampro-black.woff2') format('woff2'),
+       url('bevietnampro/bevietnampro-black.woff') format('woff'),
+       url('bevietnampro/bevietnampro-black.ttf') format('truetype'),
+       url('bevietnampro/bevietnampro-black.svg#be_vietnam_pro_black') format('svg');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Headers */
+
+@font-face {
+  font-family: 'AlphabetismHand';
+  src: url('alphabetismhand/alphabetismhand.eot');
+  src: url('alphabetismhand/alphabetismhand.eot?#iefix') format('embedded-opentype'),
+       url('alphabetismhand/alphabetismhand.woff2') format('woff2'),
+       url('alphabetismhand/alphabetismhand.woff') format('woff'),
+       url('alphabetismhand/alphabetismhand.ttf') format('truetype'),
+       url('alphabetismhand/alphabetismhand.svg#alphabetismhand') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Logo */
+
+@font-face {
+  font-family: 'Norse';
+  src: url('norse/norse.eot');
+  src: url('norse/norse.eot?#iefix') format('embedded-opentype'),
+       url('norse/norse.woff2') format('woff2'),
+       url('norse/norse.woff') format('woff'),
+       url('norse/norse.ttf') format('truetype'),
+       url('norse/norse.svg#norseregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Norse';
+  src: url('norse/norse-bold.eot');
+  src: url('norse/norse-bold.eot?#iefix') format('embedded-opentype'),
+       url('norse/norse-bold.woff2') format('woff2'),
+       url('norse/norse-bold.woff') format('woff'),
+       url('norse/norse-bold.ttf') format('truetype'),
+       url('norse/norse-bold.svg#norsebold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
